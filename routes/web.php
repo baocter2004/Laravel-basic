@@ -15,5 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [HomeController::class, "index"]);
+// Route::get('/', [HomeController::class, "index"]);
 
+Route::get('/', function () {
+    return view('client.index');
+});
+
+
+
+Route::get('shop-single', function () {
+    return view('client.shop-single');
+});
